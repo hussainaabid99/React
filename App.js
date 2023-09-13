@@ -1,124 +1,120 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-/***
- *  !Parcel features
- *
- ** Hot Module Reloading
- ** File Watcher Algorithm - C++
- ** Bundling
- ** Minification
- ** Cleaning Code
- ** Dev and Production Build
- ** Super Fast build algorithm
- ** Image Optimization
- ** Caching while development
- ** Compression
- ** Compatible with older version of browser
- ** HTTPS on dev machine
- ** Manages Port Number
- ** Consistent Hashing Algorithms
- ** Zero Config
- ** Tree Shaking - Removing un-wanted
- * 
- *  
- ** Transitive Dependencies
- */
+const Title = () => (
+          <a href="/">
+                    <img
+                              className="logo"
+                              alt="logo"
+                              src="https://yt3.ggpht.com/ytc/AKedOLSpK3T_2RxkMYb-pk9oENQB0NvYpeOdXRgQe8i5=s800-c-k-c0x00ffffff-no-rj"
+                    />
+          </a>
+);
 
-
-//React.createElement gives us an Object
-
-/**<div class="header">
-                    <h1>Hello World</h1>
-                    <ul>
-                              <li>About us</li>
-                              <li>Support</li>
-                              <li>Home</li>
-                    </ul>
-          </div> */
-
-
-// const container = React.createElement(
-//           "div",
-//           {
-//                     id: "container",
-
-//           },
-//           [React.createElement(
-//                     "h1",
-//                     {
-//                               id: "title",
-//                               key: "h2"
-//                     },
-//                     "Hello World"
-
-//           ), React.createElement(
-//                     "ul",
-//                     {},
-//                     [React.createElement(
-//                               "li",
-//                               {},
-//                               "About us"
-//                     ),
-//                     React.createElement(
-//                               "li",
-//                               {},
-//                               "Support"
-//                     ),
-//                     React.createElement(
-//                               "li",
-//                               {},
-//                               "Home"
-//                     )]
-//           )]
-// );
-
-//! JSX 
-
-const heading2 = (                      //JSX Expression
-          <h1 id="title" key="h2" tabIndex="1" className="">
-                    Hello World
-          </h1>);
-
-
-//* Babel converts JSX => React.createElement 
-//* Then React.createElement => Object => HTML */
-
-
-// ! React Components
-//        - Functional Components      (New)
-//        - Class Based Components - (Old Way)
-
-
-// * Functional Components
-
-//Normal fn which returns a react element/JSX
-//Name of FC starts with capital letter (not mandatory)
-
-const HeaderComponent2 = () => {
-
-          <div>
-                    <h2>Functional Component</h2>
-                    <h2>This is a h2 tags</h2>
-          </div>
-
-};
-const HeaderComponent = () => {
+const Header = () => {
           return (
-                    <div>
-                              {heading2}
-                              <HeaderComponent2 />
-                              <h2>Functional Component</h2>
-                              <h2>This is a h2 tags</h2>
+                    <div className="header">
+                              <Title />
+                              <div className="nav-items">
+                                        <ul>
+                                                  <li>Home</li>
+                                                  <li>About</li>
+                                                  <li>Contact</li>
+                                                  <li>Cart</li>
+                                        </ul>
+
+                              </div>
                     </div>
           );
 };
 
+const appleRestaurant = [{
+          name: "Apple Restaurant",
+          image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/q3ninryemhdwba8eam8a",
+          cusines: ["Indian", "Chinese"],
+          rating: "3.8"
+},
+{
+          name: "Apple Restaurant",
+          image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/q3ninryemhdwba8eam8a",
+          cusines: ["Indian", "Chinese"],
+          rating: "3.8"
+},
+{
+          name: "Apple Restaurant",
+          image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/q3ninryemhdwba8eam8a",
+          cusines: ["Indian", "Chinese"],
+          rating: "3.8"
+}
+]
 
-//Both are valid
+const RestaurantCard = () => {
+          return (
+                    <div className="card">
+                              <img
+                                        src={appleRestaurant.image}
+                              />
+                              <h2>{appleRestaurant.name}</h2>
+                              <h3>{appleRestaurant.cusines.join(",")}</h3>
+                              <h4>{appleRestaurant.rating}</h4>
+                    </div>
+          )
+}
 
+const Body = () => {
+          return (
+                    <div class="restaurant-list">
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+                              <RestaurantCard />
+
+                    </div>
+          );
+}
+
+const Footer = () => {
+          return (
+                    <h4>Footer</h4>
+          )
+}
+
+//React.Fragment (<>)  - It is like a empty tag
+//JSX -  one parent 
+
+const AppLayout = () => {
+          return (
+                    <>
+                              <Header />
+                              <Body />
+                              <Footer />
+                    </>
+          );
+}
+
+//* Inline Stylling in React
+const styleObj = {
+          backgroundColor: "red",
+};
+
+const jsx = (
+          <div style={styleObj}>
+                    <h1>JSX</h1>
+          </div>
+)
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //passing a react element inside the root 
-root.render(<HeaderComponent />);
+root.render(<AppLayout />);
 
