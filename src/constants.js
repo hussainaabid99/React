@@ -1,34 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+export const IMG_CDN_URL =
+          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
-const Title = () => (
-          <a href="/">
-                    <img
-                              className="logo"
-                              alt="logo"
-                              src="https://yt3.ggpht.com/ytc/AKedOLSpK3T_2RxkMYb-pk9oENQB0NvYpeOdXRgQe8i5=s800-c-k-c0x00ffffff-no-rj"
-                    />
-          </a>
-);
-
-const Header = () => {
-          return (
-                    <div className="header">
-                              <Title />
-                              <div className="nav-items">
-                                        <ul>
-                                                  <li>Home</li>
-                                                  <li>About</li>
-                                                  <li>Contact</li>
-                                                  <li>Cart</li>
-                                        </ul>
-
-                              </div>
-                    </div>
-          );
-};
-
-const restaurantList = [
+export const restaurantList = [
           {
                     "id": "300308",
                     "name": "Kaveri's Restaurant",
@@ -556,77 +529,3 @@ const restaurantList = [
                     }
           },
 ]
-
-
-//Config Driven UI
-
-
-const RestaurantCard = ({
-          name,
-          cuisines,
-          avgRating,
-          cloudinaryImageId
-}) => {
-
-          return (
-                    <div className="card">
-                              <img
-                                        src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId}
-                              />
-                              <h2>{name}</h2>
-                              <h3>{cuisines.join(",")}</h3>
-                              <h4>{avgRating}</h4>
-                    </div>
-          )
-}
-
-//Props - properties
-
-const Body = () => {
-          return (
-                    <div className="restaurant-list">
-                              {
-                                        restaurantList.map((restaurant) => {
-                                                  return <RestaurantCard {...restaurant} key={restaurant.id} />
-                                        })
-                              }
-
-                    </div>
-          );
-}
-//No key <<<<<< index key (use only if you dont have anything) << unique key (best practice)
-
-const Footer = () => {
-          return (
-                    <h4>Footer</h4>
-          )
-}
-
-//React.Fragment (<>)  - It is like a empty tag
-//JSX -  one parent 
-
-const AppLayout = () => {
-          return (
-                    <>
-                              <Header />
-                              <Body />
-                              <Footer />
-                    </>
-          );
-}
-
-//* Inline Stylling in React
-const styleObj = {
-          backgroundColor: "red",
-};
-
-const jsx = (
-          <div style={styleObj}>
-                    <h1>JSX</h1>
-          </div>
-)
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-//passing a react element inside the root 
-root.render(<AppLayout />);
-
