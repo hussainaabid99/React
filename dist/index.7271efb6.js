@@ -27184,6 +27184,8 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
 const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
         href: "/",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27192,23 +27194,25 @@ const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
             src: "https://yt3.ggpht.com/ytc/AKedOLSpK3T_2RxkMYb-pk9oENQB0NvYpeOdXRgQe8i5=s800-c-k-c0x00ffffff-no-rj"
         }, void 0, false, {
             fileName: "src/components/Header.js",
-            lineNumber: 3,
-            columnNumber: 21
+            lineNumber: 5,
+            columnNumber: 11
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Header.js",
-        lineNumber: 2,
-        columnNumber: 11
+        lineNumber: 4,
+        columnNumber: 6
     }, undefined);
 _c = Title;
 const Header = ()=>{
+    _s();
+    const [isLoggedIn, setIsLoggedIn] = (0, _react.useState)(false);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 14,
-                columnNumber: 31
+                lineNumber: 19,
+                columnNumber: 16
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "nav-items",
@@ -27218,48 +27222,64 @@ const Header = ()=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 17,
-                            columnNumber: 51
+                            lineNumber: 22,
+                            columnNumber: 26
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 18,
-                            columnNumber: 51
+                            lineNumber: 23,
+                            columnNumber: 26
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 19,
-                            columnNumber: 51
+                            lineNumber: 24,
+                            columnNumber: 26
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 20,
-                            columnNumber: 51
+                            lineNumber: 25,
+                            columnNumber: 26
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 16,
-                    columnNumber: 41
+                    lineNumber: 21,
+                    columnNumber: 21
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 15,
-                columnNumber: 31
+                lineNumber: 20,
+                columnNumber: 16
+            }, undefined),
+            isLoggedIn ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setIsLoggedIn(false),
+                children: "Logout"
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 30,
+                columnNumber: 34
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setIsLoggedIn(true),
+                children: "Login"
+            }, void 0, false, {
+                fileName: "src/components/Header.js",
+                lineNumber: 30,
+                columnNumber: 97
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 13,
-        columnNumber: 21
+        lineNumber: 18,
+        columnNumber: 11
     }, undefined);
 };
+_s(Header, "g0MSgNVZk+vKiEFnDJ9VPEfswFA=");
 _c1 = Header;
 exports.default = Header;
 var _c, _c1;
@@ -27271,7 +27291,7 @@ $RefreshReg$(_c1, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27449,22 +27469,52 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
 var _constantsJs = require("../constants.js");
 var _restaurantCardJs = require("../components/RestaurantCard.js");
 var _restaurantCardJsDefault = parcelHelpers.interopDefault(_restaurantCardJs);
+var _react = require("react");
+var _shimmerJs = require("./Shimmer.js");
+var _shimmerJsDefault = parcelHelpers.interopDefault(_shimmerJs);
 var _s = $RefreshSig$();
 function filterData(searchInput, restaurants) {
-    const filter = restaurants.filter((restaurant)=>restaurant.name.includes(searchInput));
+    const filter = restaurants.filter((restaurant)=>restaurant?.info?.name?.toLowerCase()?.includes(searchInput));
     return filter;
 }
 const Body = ()=>{
     _s();
-    // let searchTxt = "KFC";
-    const [searchInput, setSearchInput] = (0, _react.useState)(); //to create state variable    //* It returns array [variable name , fn to update the variable]
-    // const [searchClicked, setSearchClicked] = useState("false");
-    const [restaurants, setRestaurants] = (0, _react.useState)((0, _constantsJs.restaurantList));
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    const [allRestaurant, setAllRestaurant] = (0, _react.useState)([]);
+    const [searchInput, setSearchInput] = (0, _react.useState)();
+    const [filteredRestaurants, setFilteredRestaurants] = (0, _react.useState)([]);
+    //empty dependency array => once after render
+    //dep array [searchInput] => once after initial render + everytime my searchInput changes
+    (0, _react.useEffect)(()=>{
+        //API call
+        getRestaurants();
+    }, []);
+    async function getRestaurants() {
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.7956531&lng=86.43038589999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const json = await data.json();
+        console.log(json);
+        setAllRestaurant(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setFilteredRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    }
+    //Conditional Rendering
+    //if restaurant is empty => shimmer UI
+    //if restaurant has data => actual data UI
+    //not render component (Early return)
+    if (!allRestaurant) return null;
+    if (filteredRestaurants?.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "No restaurant match your filter!! "
+    }, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 47,
+        columnNumber: 51
+    }, undefined);
+    return allRestaurant?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerJsDefault.default), {}, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 49,
+        columnNumber: 44
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "search-content",
@@ -27479,52 +27529,49 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 26,
-                        columnNumber: 21
+                        lineNumber: 52,
+                        columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "search-btn",
                         onClick: ()=>{
                             //need to filter data
-                            const data = filterData(searchInput, restaurants);
+                            const data = filterData(searchInput, allRestaurant);
                             //update the state - restaurants
-                            setRestaurants(data);
+                            setFilteredRestaurants(data);
                         },
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 35,
-                        columnNumber: 21
+                        lineNumber: 61,
+                        columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 25,
-                columnNumber: 16
+                lineNumber: 51,
+                columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "restaurant-list",
-                children: restaurants.map((restaurant)=>{
-                    return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardJsDefault.default), {
-                        ...restaurant,
-                        key: restaurant.id,
-                        __source: {
-                            fileName: "src/components/Body.js",
-                            lineNumber: 47,
-                            columnNumber: 38
-                        },
-                        __self: undefined
-                    });
+                children: filteredRestaurants.map((restaurant)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardJsDefault.default), {
+                        ...restaurant.info
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 73,
+                        columnNumber: 32
+                    }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 44,
-                columnNumber: 16
+                lineNumber: 70,
+                columnNumber: 13
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "kHLd7pGkht8zDDHE5SSReClAp+I=");
+_s(Body, "tr3/sGfrowTrwtc2VOF4lfMcta4=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -27535,7 +27582,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../constants.js":"3huJa","../components/RestaurantCard.js":"bMboU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3huJa":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../constants.js":"3huJa","../components/RestaurantCard.js":"bMboU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer.js":"g6ZGj"}],"3huJa":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IMG_CDN_URL", ()=>IMG_CDN_URL);
@@ -27543,429 +27590,441 @@ parcelHelpers.export(exports, "restaurantList", ()=>restaurantList);
 const IMG_CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 const restaurantList = [
     {
-        "id": "300308",
-        "name": "Kaveri's Restaurant",
-        "cloudinaryImageId": "hawe8breczghxnwwwmwa",
-        "locality": "Bank More",
-        "areaName": "Dhanbad Locality",
-        "costForTwo": "₹200 for two",
-        "cuisines": [
-            "North Indian",
-            "Indian",
-            "Chinese",
-            "Biryani",
-            "Kebabs",
-            "Snacks"
-        ],
-        "avgRating": 3.9,
-        "feeDetails": {
-            "restaurantId": "300308",
-            "fees": [
-                {
-                    "name": "BASE_DISTANCE",
-                    "fee": 1200
-                },
-                {
-                    "name": "BASE_TIME"
-                },
-                {
-                    "name": "ANCILLARY_SURGE_FEE"
-                }
+        info: {
+            "id": "300308",
+            "name": "Kaveri's Restaurant",
+            "cloudinaryImageId": "hawe8breczghxnwwwmwa",
+            "locality": "Bank More",
+            "areaName": "Dhanbad Locality",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "North Indian",
+                "Indian",
+                "Chinese",
+                "Biryani",
+                "Kebabs",
+                "Snacks"
             ],
-            "totalFee": 1200
-        },
-        "parentId": "115850",
-        "avgRatingString": "3.9",
-        "totalRatingsString": "1K+",
-        "sla": {
-            "deliveryTime": 33,
-            "lastMileTravel": 2.3,
-            "serviceability": "SERVICEABLE",
-            "slaString": "33 mins",
-            "lastMileTravelString": "2.3 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2023-09-13 22:45:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "₹125 OFF",
-            "subHeader": "ABOVE ₹199",
-            "discountTag": "FLAT DEAL"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {}
+            "avgRating": 3.9,
+            "feeDetails": {
+                "restaurantId": "300308",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 1200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 1200
+            },
+            "parentId": "115850",
+            "avgRatingString": "3.9",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 33,
+                "lastMileTravel": 2.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "33 mins",
+                "lastMileTravelString": "2.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-13 22:45:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹199",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        }
     },
     {
-        "id": "113486",
-        "name": "Kapson Food",
-        "cloudinaryImageId": "i1raxe1c8fatwn1yeakn",
-        "locality": "Sardar Patel Nagar",
-        "areaName": "Kasturba Nagar",
-        "costForTwo": "₹200 for two",
-        "cuisines": [
-            "Continental",
-            "Chinese"
-        ],
-        "avgRating": 3.7,
-        "feeDetails": {
-            "restaurantId": "113486",
-            "fees": [
-                {
-                    "name": "BASE_DISTANCE",
-                    "fee": 1200
-                },
-                {
-                    "name": "BASE_TIME"
-                },
-                {
-                    "name": "ANCILLARY_SURGE_FEE"
-                }
+        info: {
+            "id": "113486",
+            "name": "Kapson Food",
+            "cloudinaryImageId": "i1raxe1c8fatwn1yeakn",
+            "locality": "Sardar Patel Nagar",
+            "areaName": "Kasturba Nagar",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "Continental",
+                "Chinese"
             ],
-            "totalFee": 1200
-        },
-        "parentId": "114921",
-        "avgRatingString": "3.7",
-        "totalRatingsString": "5K+",
-        "sla": {
-            "deliveryTime": 20,
-            "lastMileTravel": 1.3,
-            "serviceability": "SERVICEABLE",
-            "slaString": "20 mins",
-            "lastMileTravelString": "1.3 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2023-09-13 23:00:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "₹125 OFF",
-            "subHeader": "ABOVE ₹199",
-            "discountTag": "FLAT DEAL"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {}
+            "avgRating": 3.7,
+            "feeDetails": {
+                "restaurantId": "113486",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 1200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 1200
+            },
+            "parentId": "114921",
+            "avgRatingString": "3.7",
+            "totalRatingsString": "5K+",
+            "sla": {
+                "deliveryTime": 20,
+                "lastMileTravel": 1.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20 mins",
+                "lastMileTravelString": "1.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-13 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹199",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        }
     },
     {
-        "id": "93885",
-        "name": "Aroti Restaurant",
-        "cloudinaryImageId": "xg8wswywwedan7ebmavf",
-        "locality": "Hirapur",
-        "areaName": "Sardar Patel Nagar",
-        "costForTwo": "₹200 for two",
-        "cuisines": [
-            "Indian",
-            "Chinese"
-        ],
-        "avgRating": 4,
-        "feeDetails": {
-            "restaurantId": "93885",
-            "fees": [
-                {
-                    "name": "BASE_DISTANCE",
-                    "fee": 1200
-                },
-                {
-                    "name": "BASE_TIME"
-                },
-                {
-                    "name": "ANCILLARY_SURGE_FEE"
-                }
+        info: {
+            "id": "93885",
+            "name": "Aroti Restaurant",
+            "cloudinaryImageId": "xg8wswywwedan7ebmavf",
+            "locality": "Hirapur",
+            "areaName": "Sardar Patel Nagar",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "Indian",
+                "Chinese"
             ],
-            "totalFee": 1200
-        },
-        "parentId": "36261",
-        "avgRatingString": "4.0",
-        "totalRatingsString": "10K+",
-        "sla": {
-            "deliveryTime": 28,
-            "lastMileTravel": 1.3,
-            "serviceability": "SERVICEABLE",
-            "slaString": "28 mins",
-            "lastMileTravelString": "1.3 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2023-09-13 23:00:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "30% OFF",
-            "subHeader": "UPTO ₹75"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {}
+            "avgRating": 4,
+            "feeDetails": {
+                "restaurantId": "93885",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 1200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 1200
+            },
+            "parentId": "36261",
+            "avgRatingString": "4.0",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 28,
+                "lastMileTravel": 1.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "28 mins",
+                "lastMileTravelString": "1.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-13 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "30% OFF",
+                "subHeader": "UPTO ₹75"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        }
     },
     {
-        "id": "297008",
-        "name": "New Bombay Sweets",
-        "cloudinaryImageId": "dyafvn9xxlcn0ev3vsgu",
-        "locality": "City Centre Mall",
-        "areaName": "Jharudih",
-        "costForTwo": "₹200 for two",
-        "cuisines": [
-            "Desserts",
-            "South Indian",
-            "Chaat",
-            "Sweets"
-        ],
-        "avgRating": 4.2,
-        "veg": true,
-        "feeDetails": {
-            "restaurantId": "297008",
-            "fees": [
-                {
-                    "name": "BASE_DISTANCE",
-                    "fee": 1200
-                },
-                {
-                    "name": "BASE_TIME"
-                },
-                {
-                    "name": "ANCILLARY_SURGE_FEE"
-                }
+        info: {
+            "id": "297008",
+            "name": "New Bombay Sweets",
+            "cloudinaryImageId": "dyafvn9xxlcn0ev3vsgu",
+            "locality": "City Centre Mall",
+            "areaName": "Jharudih",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "Desserts",
+                "South Indian",
+                "Chaat",
+                "Sweets"
             ],
-            "totalFee": 1200
-        },
-        "parentId": "146072",
-        "avgRatingString": "4.2",
-        "totalRatingsString": "5K+",
-        "sla": {
-            "deliveryTime": 26,
-            "lastMileTravel": 1.4,
-            "serviceability": "SERVICEABLE",
-            "slaString": "26 mins",
-            "lastMileTravelString": "1.4 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2023-09-13 22:00:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "aggregatedDiscountInfoV2": {},
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {}
+            "avgRating": 4.2,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "297008",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 1200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 1200
+            },
+            "parentId": "146072",
+            "avgRatingString": "4.2",
+            "totalRatingsString": "5K+",
+            "sla": {
+                "deliveryTime": 26,
+                "lastMileTravel": 1.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "26 mins",
+                "lastMileTravelString": "1.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-13 22:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        }
     },
     {
-        "id": "400837",
-        "name": "Kohinoor Darbar",
-        "cloudinaryImageId": "juppjcjhavapysv0wsfu",
-        "locality": "Naya Bazar",
-        "areaName": "Bank More",
-        "costForTwo": "₹200 for two",
-        "cuisines": [
-            "Indian",
-            "Chinese"
-        ],
-        "avgRating": 3.5,
-        "feeDetails": {
-            "restaurantId": "400837",
-            "fees": [
-                {
-                    "name": "BASE_DISTANCE",
-                    "fee": 1200
-                },
-                {
-                    "name": "BASE_TIME"
-                },
-                {
-                    "name": "ANCILLARY_SURGE_FEE"
-                }
+        info: {
+            "id": "400837",
+            "name": "Kohinoor Darbar",
+            "cloudinaryImageId": "juppjcjhavapysv0wsfu",
+            "locality": "Naya Bazar",
+            "areaName": "Bank More",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "Indian",
+                "Chinese"
             ],
-            "totalFee": 1200
-        },
-        "parentId": "119625",
-        "avgRatingString": "3.5",
-        "totalRatingsString": "1K+",
-        "sla": {
-            "deliveryTime": 23,
-            "lastMileTravel": 1.6,
-            "serviceability": "SERVICEABLE",
-            "slaString": "23 mins",
-            "lastMileTravelString": "1.6 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2023-09-13 23:30:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "₹125 OFF",
-            "subHeader": "ABOVE ₹199",
-            "discountTag": "FLAT DEAL"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {}
+            "avgRating": 3.5,
+            "feeDetails": {
+                "restaurantId": "400837",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 1200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 1200
+            },
+            "parentId": "119625",
+            "avgRatingString": "3.5",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 23,
+                "lastMileTravel": 1.6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "23 mins",
+                "lastMileTravelString": "1.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-13 23:30:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹199",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        }
     },
     {
-        "id": "92858",
-        "name": "Peep-In",
-        "cloudinaryImageId": "okt7uyacm8mkgwmk0z6e",
-        "locality": "Jora Phatak Road",
-        "areaName": "Joraphatak",
-        "costForTwo": "₹200 for two",
-        "cuisines": [
-            "North Indian",
-            "South Indian",
-            "Chinese",
-            "Snacks"
-        ],
-        "avgRating": 4,
-        "veg": true,
-        "feeDetails": {
-            "restaurantId": "92858",
-            "fees": [
-                {
-                    "name": "BASE_DISTANCE",
-                    "fee": 1200
-                },
-                {
-                    "name": "BASE_TIME"
-                },
-                {
-                    "name": "ANCILLARY_SURGE_FEE"
-                }
+        info: {
+            "id": "92858",
+            "name": "Peep-In",
+            "cloudinaryImageId": "okt7uyacm8mkgwmk0z6e",
+            "locality": "Jora Phatak Road",
+            "areaName": "Joraphatak",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "North Indian",
+                "South Indian",
+                "Chinese",
+                "Snacks"
             ],
-            "totalFee": 1200
-        },
-        "parentId": "156912",
-        "avgRatingString": "4.0",
-        "totalRatingsString": "5K+",
-        "sla": {
-            "deliveryTime": 25,
-            "lastMileTravel": 2.9,
-            "serviceability": "SERVICEABLE",
-            "slaString": "25 mins",
-            "lastMileTravelString": "2.9 km",
-            "iconType": "ICON_TYPE_EMPTY"
-        },
-        "availability": {
-            "nextCloseTime": "2023-09-13 22:00:00",
-            "opened": true
-        },
-        "badges": {},
-        "isOpen": true,
-        "type": "F",
-        "badgesV2": {
-            "entityBadges": {
-                "imageBased": {},
-                "textBased": {},
-                "textExtendedBadges": {}
-            }
-        },
-        "aggregatedDiscountInfoV3": {
-            "header": "₹125 OFF",
-            "subHeader": "ABOVE ₹199",
-            "discountTag": "FLAT DEAL"
-        },
-        "differentiatedUi": {
-            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-            "differentiatedUiMediaDetails": {
-                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                "lottie": {},
-                "video": {}
-            }
-        },
-        "reviewsSummary": {},
-        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-        "restaurantOfferPresentationInfo": {}
+            "avgRating": 4,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "92858",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 1200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 1200
+            },
+            "parentId": "156912",
+            "avgRatingString": "4.0",
+            "totalRatingsString": "5K+",
+            "sla": {
+                "deliveryTime": 25,
+                "lastMileTravel": 2.9,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25 mins",
+                "lastMileTravelString": "2.9 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-13 22:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹199",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        }
     }
 ];
 
@@ -27999,7 +28058,7 @@ const RestaurantCard = ({ name, cuisines, avgRating, cloudinaryImageId })=>{
                 columnNumber: 31
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: cuisines.join(",")
+                children: cuisines?.join(",")
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
                 lineNumber: 16,
@@ -28029,7 +28088,36 @@ $RefreshReg$(_c, "RestaurantCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../constants.js":"3huJa","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../constants.js":"3huJa","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"g6ZGj":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0b04.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Shimmer UI Loading......"
+    }, void 0, false, {
+        fileName: "src/components/Shimmer.js",
+        lineNumber: 2,
+        columnNumber: 18
+    }, undefined);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$0b04.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
